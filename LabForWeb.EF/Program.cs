@@ -11,8 +11,9 @@ namespace LabForWeb.EF
         {
             using var dc = new BlogContext();
 
-            var r = dc.Articoli.Where(a => a.Commenti != null).OrderBy(o => o.Commenti!.Count());
-            Console.WriteLine(r.Count());
+            //var r = dc.Articoli.Where(a => a.Commenti != null).OrderBy(o => o.Commenti!.Count());
+            //Console.WriteLine(r.Count());
+            DBFiller.Fill(dc);
 
         }
     }
