@@ -14,5 +14,8 @@ namespace LabForWeb.DAL.Models
         [Required]
         [MaxLength(100)]
         public string? Name { get; set; }
+
+        // Relazione molti a molti
+        public virtual ICollection<Articolo>? Articoli { get; set; }
     }
 }

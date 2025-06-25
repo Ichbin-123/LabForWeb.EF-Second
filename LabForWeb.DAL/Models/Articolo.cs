@@ -18,5 +18,9 @@ namespace LabForWeb.DAL.Models
         public virtual Utente? Autore { get; set; }
 
         public virtual ICollection<Commento>? Commenti { get; set; }
+
+        public virtual ICollection<Categoria>? Categorie {  get; set; }
+        public virtual ICollection<Tag>? Tags { get; set; }
+        public virtual ICollection<ArticoloTag>? ArticoloTags { get; set; }
     }
 }
